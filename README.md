@@ -1,6 +1,12 @@
 log4j2redis
 ===========
 
+Forked version:
+* using ConcurrentLinkedQueue to queue up log messages
+* using Redis List to push messages (instead of individual keys)
+* Redis auto-reconnect feature
+* Redis Log4j appender will not block
+
 log4j appender that writes straight to Redis.
 
 The appender works with log4j 1.x series and is currently not supporting the newer log4j 2.x series. 
